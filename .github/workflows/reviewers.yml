@@ -1,0 +1,16 @@
+reviewers:
+  # Reviewers per author.
+  # Keys are reviewees, each of which has an array of reviewers.
+  defaults:
+    - osakana0630
+files:
+  # Keys are glob expressions.
+  # You can assign groups defined above as well as GitHub usernames.
+  '**':
+    - osakana0630
+
+options:
+  ignore_draft: true
+  ignored_keywords:
+    - DO NOT REVIEW
+
