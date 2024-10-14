@@ -4,7 +4,7 @@ on:
   pull_request:
     branches:
       - main
-    types: [open, reopened]
+    types: [opened, reopened]
 
 permissions:
   id-token: write
@@ -16,7 +16,7 @@ jobs:
     name: Auto Request Review
     runs-on: ubuntu-latest
     steps:
-      - name: Reqeust review based on files changes and/or groups the author belongs to
+      - name: Request review based on files changes and/or groups the author belongs to
         uses: necojackarc/auto-request-review@v0.13.0
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
