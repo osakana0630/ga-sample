@@ -25,8 +25,7 @@ jobs:
         env:
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
-          GITHUB_ACTION_CONFIG.AUTO_DESC
-          RIBE: true
+          GITHUB_ACTION_CONFIG.AUTO_DESCRIBE: true
           GITHUB_ACTION_CONFIG.AUTO_REVIEW: true
           GITHUB_ACTION_CONFIG.AUTO_IMPROVE: true
           PR_REVIEWER.EXTRA_INSTRUCTIONS: "Please use Japanese in descriptions."
