@@ -8,4 +8,3 @@ jobs:
           set -x
           date
           hostname
-          set +x
