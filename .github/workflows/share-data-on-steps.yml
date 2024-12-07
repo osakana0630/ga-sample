@@ -1,4 +1,4 @@
-name: share data on steps
+name: Share data on steps
 on: push
 jobs:
   share:
