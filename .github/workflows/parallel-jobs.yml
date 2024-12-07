@@ -1,4 +1,4 @@
-name: Log group
+name: Parallel jobs
 on: push
 jobs:
   first:
