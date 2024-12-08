@@ -1,4 +1,4 @@
-name: Actionlint
+name: Action lint
 on:
   push:
     branches: [ main ]
