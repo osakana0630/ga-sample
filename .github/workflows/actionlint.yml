@@ -28,4 +28,4 @@ jobs:
       - name: Run actionlint
         run: |
           set -x
-          docker run --rm -v "$(pwd):$(pwd)" -w "$(pwd)" rhysd/actionlint:1.7.3
+          docker run --rm -v "$(pwd):$(pwd)" -w "$(pwd)" rhysd/actionlint:latest
