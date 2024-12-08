@@ -1,5 +1,4 @@
 name: Actionlint
-
 on:
   push:
     branches: [ main ]
@@ -19,3 +18,7 @@ jobs:
       - name: Check workflow files
         run: ${{ steps.get_actionlint.outputs.executable }} -color
         shell: bash
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
