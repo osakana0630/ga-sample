@@ -18,14 +18,12 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     timeout-minutes: 5
+    permissions:
+      contents: read
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Download actionlint
-        id: get_actionlint
-        run: bash <(curl https://raw.githubusercontent.com/rhysd/actionlint/main/scripts/download-actionlint.bash)
-        shell: bash
-
+      - name: Checkout
+        # ワークスペースにリポジトリをチェックアウト
+        uses: actions/checkout@v4
       # Bashトレーシングオプションの有効化でログを詳細化
       - name: Run actionlint
         run: |
