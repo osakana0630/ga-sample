@@ -1,4 +1,4 @@
-name: Sequential jobs
+#name: Sequential jobs
 on: push
 jobs:
   first:
