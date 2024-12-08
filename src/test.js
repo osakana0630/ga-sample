@@ -5,4 +5,7 @@ let url = "https://" + domain + "?"+ param + "=" + value;
 
 console.log(url);
 console.log(url);
-g
+console.log(url);
+console.log(url);
+console.log(url);
+console.log(url);
